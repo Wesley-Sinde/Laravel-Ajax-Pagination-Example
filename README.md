@@ -1,3 +1,10 @@
+ <div class="card-header">
+                        <h4>Laravel 7 Ajax Pagination Example - https://www.wesley.io.ke/
+                        <p align="center">Kindly follow me and star this project if you get it helpful</p>
+                        </h4>
+                    </div>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.nicesnippets.com/upload/blog/1583578499_laravel7-ajax-pagination.png?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1" width="400"></a></p>
 
 Now, let's see post of laravel 7 ajax pagination with jquery. We will look at example of laravel 7 pagination json. In this article, we will implement a jquery ajax pagination in laravel 7.
@@ -126,7 +133,7 @@ following path:/app/Http/Controllers/BlogController.php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Blog;
+use App\Models\Blog;
 
 class BlogController extends Controller
 {
@@ -156,7 +163,9 @@ following path:/resources/views/pagination.blade.php
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 7 Ajax Pagination Example</title>
+    <title>Laravel 7 Ajax Pagination By wesley sinde</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
     <style type="text/css">
@@ -251,3 +260,8 @@ Now you can open bellow URL on your browser:
 http://localhost:8000/pagination-ajax
 
 It will help you...
+
+    <footer class="px-3 text-lg text-center text-white no-underline uppercase bg-gray-900 py- italilc">
+        <a href="https://www.wesley.io.ke/">Wesley Sinde: Some rights reserved {{ now()->year }}
+        </a>
+    </footer>
